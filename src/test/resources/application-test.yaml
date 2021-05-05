@@ -1,0 +1,13 @@
+ebean:
+  test:
+    platform: postgres # h2, postgres, mysql, mariadb, oracle, sqlserver, hana, clickhouse, sqlite
+    ddlMode: dropCreate # none | dropCreate | migration
+    dbName: egdb
+  # migration:
+  #   run: true  
+
+datasource:
+  db:
+    username: admin
+    password: admin
+    url: jdbc:postgresql://localhost:5432/egdb    
