@@ -1,2 +1,3 @@
-1. Run docker-compose up to start the database container
-2. Either run mvn test or the SimpleJunitTest.java via your favorite IDE
+## Simple Ebean/Postgres Unittest 
+
+A simple Ebean/PostgresSQL unittest example using Ebean docker test containers
