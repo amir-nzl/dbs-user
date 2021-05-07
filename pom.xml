@@ -32,15 +32,15 @@
             <version>12.8.0</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
+          <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>42.2.20</version>
         </dependency>
         <dependency>
-            <groupId>io.ebean</groupId>
-            <artifactId>ebean</artifactId>
-            <version>12.8.3</version>
+          <groupId>io.ebean</groupId>
+          <artifactId>ebean</artifactId>
+          <version>12.8.2</version>
         </dependency>
     </dependencies>
 
@@ -58,8 +58,7 @@
                 <extensions>true</extensions>
                 <configuration>
                   <tiles>
-                   <!-- other tiles ... -->
-                   <tile>io.ebean.tile:enhancement:12.8.0</tile>
+                   <tile>io.ebean.tile:enhancement:12.8.2</tile>
                  </tiles>
                </configuration>
              </plugin>
