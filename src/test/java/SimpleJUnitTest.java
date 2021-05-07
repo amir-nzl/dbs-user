@@ -1,4 +1,4 @@
-import org.example.model.User;
+import org.example.model.Customer;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -9,17 +9,18 @@ class SimpleJUnitTest {
     @Test
     public void insertFindDelete() {
 
-        User User = new User();
+        Customer User = new Customer();
         User.setName("Jon Snow");
 
         // insert the customer in the DB
         DB.save(User);
 
         // Find by Id
-        User foundJonSnow = DB.find(User.class, 1);
+        Customer foundJonSnow = DB.find(Customer.class, 1);
+        System.out.println(foundJonSnow.getName());
         Assertions.assertEquals(foundJonSnow.getName(), "Jon Snow");
 
         // delete the customer
-        DB.delete(User);
+       // DB.delete(User);
     }
 }
