@@ -1,0 +1,14 @@
+micronaut:
+  server:
+    port: 8080
+
+datasource:
+  default:
+    username: admin
+    password: admin
+    url: jdbc:postgresql://localhost:5432/customedb
+    driverClassName: org.postgresql.Driver
+
+ebean:
+  migration:
+    run: true       # run database migrations on startup

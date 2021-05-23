@@ -1,10 +1,10 @@
-package org.example.model;
+package org.example;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Customer {
+public class Customer extends BaseModel{
     @Id
     long id;
 
